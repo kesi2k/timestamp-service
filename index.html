@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>timestamp microservice</title>
+		
+		<link href="public/css/main.css" rel="stylesheet" type="text/css">
+		<!-- Latest compiled and minified CSS -->
+
+	</head>
+
+	<body class="container">
+		<head>
+		<h1>API Basejump: Timestamp microservice</h1>
+		</head>
+		<div>
+			<p>User stories:</p>
+			<ol>and it will check to see whether that string contains either a unix timestamp or a natural language date.  
+				 (example: January 1, 2016)</li>
+				 <li>If it does, it returns both the Unix timestamp and the natural
+				 language form of that date.</li>
+				 <li> If it does not contain a date or Unix timestamp, it return null for
+				 those properties.</li>
+			</ol>
+		</div>
+		<div>
+			<h3>Example usage:</h3>
+			<p class="example">https://timestamp-ms.herokuapp.com/December%2015,%202015</p>
+			<p class="example">https://timestamp-ms.herokuapp.com/1450137600</p>
+		</div>
+		<div>
+			<h3>Example output:</h3>
+			<p class="example">{"unix":1450137600, "natural":"December 15, 2015"}</p>
+		</div>
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	</body>
+	
+
+</html>

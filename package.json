@@ -1,0 +1,24 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "A webpage that takes a URL string and responds with a unix timestamp or a natural language date",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kesi2k/timestamp-service.git"
+  },
+  "author": "Makesi Hamilton",
+  "license": "ISC",
+  "engines": {
+    "node": "4.x",
+    "npm": "3.x"
+  },
+  "bugs": {
+    "url": "https://github.com/kesi2k/timestamp-service/issues"
+  },
+  "homepage": "https://github.com/kesi2k/timestamp-service#readme"
+}
