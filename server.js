@@ -16,12 +16,12 @@ if(!isNaN(urlString)){ var date_ = new Date (urlString * 1000);
     unix = urlString, 
     natural = date_.toLocaleString("en-US", {month: 'long', day: 'numeric', year: 'numeric'}) 
     
-};  
+}
 
 console.log("This is natural time: ", natural);
 console.log("This is unix time: ", unix);
     
-return {natural: natural, unix: unix}
+return {natural: natural, unix: unix};
     
 }
 
@@ -41,13 +41,13 @@ console.log("This is the URL: ", urL);
         response.writeHeader(200, {"Content-Type": "text/html"});  
         response.write(htmlFile);  
         response.end(); 
-	})
+	});
 	}
 	
-	else if (request.url == "/favicon.ico"){};
+	else if (request.url == "/favicon.ico"){}
 	
 	else if(urL.length>0){
-	    response.writeHead(200, { 'Content-Type': 'application/json' })  
+	    response.writeHead(200, { 'Content-Type': 'application/json' }); 
         response.end(JSON.stringify(stampUrl(urL)));
 	}
 	
