@@ -34,7 +34,7 @@ var urL = decodeURIComponent(request.url.substring(1));
 console.log("This is the URL: ", urL);
 
 	if (request.url == "/"){
-	fs.readFile('./Time_stamp.html', function (err, htmlFile) {
+	fs.readFile('./index.html', function (err, htmlFile) {
     if (err) {
         throw err; }
 	
@@ -43,6 +43,9 @@ console.log("This is the URL: ", urL);
         response.end(); 
 	})
 	}
+	
+	else if (request.url == "/favicon.ico"){};
+	
 	else if(urL.length>0){
 	    response.writeHead(200, { 'Content-Type': 'application/json' })  
         response.end(JSON.stringify(stampUrl(urL)));
