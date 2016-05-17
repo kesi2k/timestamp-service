@@ -21,7 +21,7 @@ if(!isNaN(urlString)){ var date_ = new Date (urlString * 1000);
 console.log("This is natural time: ", natural);
 console.log("This is unix time: ", unix);
     
-return {natural: natural, unix: unix};
+return {unix: unix, natural: natural};
     
 }
 
